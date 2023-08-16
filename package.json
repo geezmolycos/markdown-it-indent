@@ -13,7 +13,6 @@
     "index.js",
     "dist/"
   ],
-  "type": "module",
   "scripts": {
     "lint": "eslint .",
     "test": "npm run lint && nyc mocha",
