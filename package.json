@@ -1,0 +1,33 @@
+{
+  "name": "markdown-it-indent",
+  "version": "1.0.0",
+  "description": "Add paragraph indentation and line blocks to markdown-it",
+  "keywords": [
+    "markdown-it-plugin",
+    "markdown-it",
+    "markdown"
+  ],
+  "repository": "geezmolycos/markdown-it-indent",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "dist/"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint && nyc mocha",
+    "coverage": "npm run test && nyc report --reporter html",
+    "report-coveralls": "nyc --reporter=lcov mocha",
+    "browserify": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "eslint": "^8.47.0",
+    "markdown-it": "13.0.1",
+    "markdown-it-testgen": "~0.1.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "rollup": "^3.28.0"
+  }
+}

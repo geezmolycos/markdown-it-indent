@@ -1,0 +1,90 @@
+
+no indentation
+.
+2^3=8
+.
+<p>2^3=8</p>
+.
+
+no indentation
+.
+^3=8
+.
+<p>^3=8</p>
+.
+
+head indentation
+.
+^ ^ 
+content
+.
+<p style="--head-indent: 2em;" class="indented">content</p>
+.
+
+first line indentation
+.
+^ content within a single line
+.
+<p style="--initial-indent: 1em;" class="indented">content within a single line</p>
+.
+
+hanging indentation
+.
+\
+^ content
+.
+<p style="--following-indent: 1em;" class="indented">content</p>
+.
+
+all three
+.
+^ 
+^ ^ ^ \
+^ ^ content
+another line
+.
+<p style="--head-indent: 1em; --initial-indent: 3em; --following-indent: 2em;" class="indented">content
+another line</p>
+.
+
+hidden paragraph
+.
+paragraph1
+
+^
+
+paragraph2
+.
+<p>paragraph1</p>
+
+<p>paragraph2</p>
+.
+
+
+no content
+.
+paragraph1
+
+^ ^
+
+paragraph2
+.
+<p>paragraph1</p>
+<p></p>
+<p>paragraph2</p>
+.
+
+line block
+.
+| The limerick packs laughs anatomical
+| In space that is quite economical.
+|    	But the good ones I've seen
+|    So seldom are clean
+| And the clean ones so seldom are comical
+.
+<p>The limerick packs laughs anatomical<br>
+In space that is quite economical.<br>
+      But the good ones I've seen<br>
+   So seldom are clean<br>
+And the clean ones so seldom are comical</p>
+.
